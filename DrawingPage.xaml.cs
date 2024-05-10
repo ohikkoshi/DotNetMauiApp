@@ -1,8 +1,8 @@
 ﻿namespace DotNetMauiApp;
 
-public partial class MainPage : ContentPage
+public partial class DrawingPage : ContentPage
 {
-	public MainPage()
+	public DrawingPage()
 	{
 		InitializeComponent();
 	}

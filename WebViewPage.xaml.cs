@@ -1,8 +1,8 @@
 ﻿namespace DotNetMauiApp;
 
-public partial class MainPage : ContentPage
+public partial class WebViewPage : ContentPage
 {
-	public MainPage()
+	public WebViewPage()
 	{
 		InitializeComponent();
 	}

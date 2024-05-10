@@ -4,12 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:DotNetMauiApp"
-    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutBehavior="Locked"
     Title="DotNetMauiApp">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+	<ShellContent Title="Main" ContentTemplate="{DataTemplate local:MainPage}" />    
+
+	<FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+		<Tab Title="Toolkit">
+			<ShellContent Title="WebView" ContentTemplate="{DataTemplate local:WebViewPage}" />
+			<ShellContent Title="Media" ContentTemplate="{DataTemplate local:MediaPage}" />
+			<ShellContent Title="Drawing" ContentTemplate="{DataTemplate local:DrawingPage}" />
+		</Tab>
+	</FlyoutItem>
+
+	<ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}" />    
 
 </Shell>
