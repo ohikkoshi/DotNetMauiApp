@@ -17,6 +17,6 @@
 		</Tab>
 	</FlyoutItem>
 
-	<ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}" />    
+	<ShellContent Icon="github_mark_white.png" Title="About" ContentTemplate="{DataTemplate local:AboutPage}" />    
 
 </Shell>
