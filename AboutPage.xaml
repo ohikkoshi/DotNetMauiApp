@@ -21,6 +21,7 @@
 			</Label.FormattedText>
 		</Label>
 
+		<Label x:Name="Description" Text="Dark Mode" />
 		<Switch x:Name="themeSwitch" Toggled="OnThemeToggled" />
 
 	</StackLayout>

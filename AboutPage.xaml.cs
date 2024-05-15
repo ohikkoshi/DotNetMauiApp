@@ -7,7 +7,7 @@ public partial class AboutPage : ContentPage
 		InitializeComponent();
 
 		// Default Theme
-		themeSwitch.IsToggled = Application.Current.UserAppTheme == AppTheme.Dark;
+		themeSwitch.IsToggled = Application.Current.RequestedTheme == AppTheme.Dark;
 	}
 
 	void OnThemeToggled(object sender, ToggledEventArgs e)
